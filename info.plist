@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>se.weahead.itermhere</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>5A93F1CE-49D1-4B7D-B67F-3BA469675BC0</key>
+		<array/>
+		<key>708DB5EA-46FF-4F2E-A51C-04666C6ECD59</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C6F27B7C-B4A0-40F5-9CE1-57FD581B8EBF</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>Open in a new tab</string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>EF8B383D-FCB0-468F-B10F-D5A9C01167EA</string>
+				<key>modifiers</key>
+				<integer>131072</integer>
+				<key>modifiersubtext</key>
+				<string>Open in a new window</string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>5A93F1CE-49D1-4B7D-B67F-3BA469675BC0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>C6F27B7C-B4A0-40F5-9CE1-57FD581B8EBF</key>
+		<array/>
+		<key>EF8B383D-FCB0-468F-B10F-D5A9C01167EA</key>
+		<array/>
+	</dict>
+	<key>createdby</key>
+	<string>Michael Lopez &lt;michael@weahead.se&gt;</string>
+	<key>description</key>
+	<string>Open iTerm at the foremost Finder path.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>iTerm Here</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>/usr/bin/osascript ./itermhere.scpt tab</string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>C6F27B7C-B4A0-40F5-9CE1-57FD581B8EBF</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>/usr/bin/osascript ./itermhere.scpt window</string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>EF8B383D-FCB0-468F-B10F-D5A9C01167EA</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>.</string>
+				<key>subtext</key>
+				<string>Open iTerm at the foremost Finder path.</string>
+				<key>text</key>
+				<string>Open iTerm here</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>708DB5EA-46FF-4F2E-A51C-04666C6ECD59</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>/usr/bin/osascript ./itermhere.scpt split</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>5A93F1CE-49D1-4B7D-B67F-3BA469675BC0</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>MIT License (MIT) - Copyright (c) 2015 Michael Lopez
+
+https://github.com/michaellopez/alfred-iterm-here</string>
+	<key>uidata</key>
+	<dict>
+		<key>5A93F1CE-49D1-4B7D-B67F-3BA469675BC0</key>
+		<dict>
+			<key>ypos</key>
+			<real>460</real>
+		</dict>
+		<key>708DB5EA-46FF-4F2E-A51C-04666C6ECD59</key>
+		<dict>
+			<key>ypos</key>
+			<real>240</real>
+		</dict>
+		<key>C6F27B7C-B4A0-40F5-9CE1-57FD581B8EBF</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>EF8B383D-FCB0-468F-B10F-D5A9C01167EA</key>
+		<dict>
+			<key>ypos</key>
+			<real>240</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>www.weahead.se</string>
+</dict>
+</plist>
